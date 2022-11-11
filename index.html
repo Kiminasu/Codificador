@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/code_mystics.png" type="image/x-icon">
+</head>
+<body>
+    
+    <main class="main_container">
+        <header class="cabecalho">
+            <h1>Mensagens Codificadas</h1>
+        </header>
+        <div id="instruction">
+            <h2>Sua mensagem aparecerá aqui!</h2>
+        <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+        </div>
+        <div class="container_input">
+            <div class="input">
+                <textarea id="input_texto" cols="10" rows="10" placeholder="Digite o seu texto aqui..."></textarea>
+            </div>
+        <div id="output">
+            <img src="/img/code_mystics.png" alt="fundo da página">
+        </div>
+        </div>
+        <div class="codigo_radio">
+            <div id="radio1">
+            <input id="cifra_Cesar" name="codigo" value="" type="radio">
+            <label for="codigo">Cifra de Cesar</label>
+            </div>
+            <div id="radio2">
+            <input id="base_64" name="codigo" value="" type="radio">
+            <label for="codigo">Base 64</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="container_btn">
+                <button onclick="criptografar()"  class="btn_criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn_descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icones">
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por Lucas Qzoliver</h3>
+    </footer>
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
